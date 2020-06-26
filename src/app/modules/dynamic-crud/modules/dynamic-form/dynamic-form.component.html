@@ -1,0 +1,4 @@
+<form [formGroup]="dynamicForm" (ngSubmit)="submit()">
+    <formly-form [model]="model" [fields]="fields" [options]="options" [form]="dynamicForm"></formly-form>
+    <button type="submit" mat-raised-button color="primary" [disabled]="!dynamicForm.valid">Submit</button>
+</form>
